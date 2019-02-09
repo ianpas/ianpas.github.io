@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/patcher/same-tag.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/patcher</a> same-tag.ts
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">96% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>24/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90.91% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>10/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">96% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>24/25</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41x</span>
+<span class="cline-any cline-yes">41x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { IVDomNode, IRigidElement } from "../element/rigid-element";
+import { Render } from "../renderer/dom-renderer";
+import { Patch } from "./patcher";
+import { SetAttribute } from "../renderer/utility";
+import { Flat } from "../common/utility";
+&nbsp;
+export function PatchSameTag({ dom, vdom }: { dom: HTMLElement | ChildNode, vdom: IRigidElement })
+{
+    const pool = new Map&lt;string, ChildNode&gt;();
+    const active_element = document.activeElement;
+&nbsp;
+    Flat(dom.childNodes).forEach((child, index) =&gt;
+    {
+        const key = child.__RigidKey__ || `__index__${index}`;
+        pool.set(key, child);
+    });
+&nbsp;
+    Flat(vdom.children).forEach((child, index) =&gt;
+    {
+        // crux: 3 cases: vdom amount &lt; = &gt; dom amount
+        const key = (child.props &amp;&amp; child.props.key) || `__index__${index}`;
+&nbsp;
+        // TODO: how to insert patched into correct position?
+        const patched = pool.get(key) ? Patch({ dom: pool.get(key), vdom: child }) : Render(child);
+        patched &amp;&amp; dom.appendChild(patched);
+        pool.delete(key);
+    });
+&nbsp;
+    // vdom amount less than dom amount
+    // unmount these redundant dom element
+    pool.forEach(child =&gt;
+    {
+        const instance = (child as any).__RigidInstance__;
+        instance &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >instance.ComponentWillUnmount();</span>
+        child.remove();
+    });
+&nbsp;
+    for (const attr of (dom as any).attributes)
+    {
+        (<span class="cstat-no" title="statement not covered" >dom as any).removeAttribute(attr.name);</span>
+    }
+&nbsp;
+    for (const prop in vdom.props)
+    {
+        SetAttribute(dom as HTMLElement, prop, vdom.props[prop]);
+    }
+&nbsp;
+    (active_element as any).focus();
+&nbsp;
+    return dom;
+}</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Feb 09 2019 16:23:32 GMT+0800 (China Standard Time)
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>
