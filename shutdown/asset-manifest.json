@@ -1,0 +1,16 @@
+{
+  "main.css": "/shutdown/static/css/main.8873fa4e.chunk.css",
+  "main.js": "/shutdown/static/js/main.47321bf3.chunk.js",
+  "main.js.map": "/shutdown/static/js/main.47321bf3.chunk.js.map",
+  "static/js/1.99e22cf7.chunk.js": "/shutdown/static/js/1.99e22cf7.chunk.js",
+  "static/js/1.99e22cf7.chunk.js.map": "/shutdown/static/js/1.99e22cf7.chunk.js.map",
+  "runtime~main.js": "/shutdown/static/js/runtime~main.100b011a.js",
+  "runtime~main.js.map": "/shutdown/static/js/runtime~main.100b011a.js.map",
+  "static/css/main.8873fa4e.chunk.css.map": "/shutdown/static/css/main.8873fa4e.chunk.css.map",
+  "static/media/home.module.scss": "/shutdown/static/media/background.9092eed7.svg",
+  "static/media/dragon-48-white.svg": "/shutdown/static/media/dragon-48-white.43102482.svg",
+  "static/media/logo.svg": "/shutdown/static/media/logo.43102482.svg",
+  "index.html": "/shutdown/index.html",
+  "precache-manifest.e33f32915879e3b10a92b315d7dbd53c.js": "/shutdown/precache-manifest.e33f32915879e3b10a92b315d7dbd53c.js",
+  "service-worker.js": "/shutdown/service-worker.js"
+}
