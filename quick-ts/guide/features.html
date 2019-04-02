@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head><meta name="generator" content="Hexo 3.8.0">
+    <title>功能 — QuickApp TS</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Vue.js - The Progressive JavaScript Framework">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="alternate" hreflang="x-default" href="https://vuejs.org/guide/features.html">
+    <link rel="alternate" hreflang="zh" href="https://cn.vuejs.org/guide/features.html">
+    <link rel="alternate" hreflang="ja" href="https://jp.vuejs.org/guide/features.html">
+    <link rel="alternate" hreflang="ru" href="https://ru.vuejs.org/guide/features.html">
+    <link rel="alternate" hreflang="ko" href="https://kr.vuejs.org/guide/features.html">
+    <link rel="alternate" hreflang="pt-BR" href="https://br.vuejs.org/guide/features.html">
+    <link rel="alternate" hreflang="fr" href="https://fr.vuejs.org/guide/features.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="功能 — Vue.js">
+    <meta property="og:description" content="Vue.js - The Progressive JavaScript Framework">
+    <meta property="og:image" content="https://cn.vuejs.org//images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="功能 — Vue.js">
+    <meta name="twitter:description" content="Vue.js - The Progressive JavaScript Framework">
+    <meta name="twitter:image" content="https://cn.vuejs.org/images/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icons/favicon-192x192.png">
+    <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#4fc08d">
+    <meta name="theme-color" content="#4fc08d">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono' rel='stylesheet' type='text/css'> -->
+    <!-- <link href='//fonts.googleapis.com/css?family=Dosis:500&text=Vue.js' rel='stylesheet' type='text/css'> -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/js/vue.js"></script>
+    <script>
+      Vue.config.productionTip = false
+      window.PAGE_TYPE = "guide"
+    </script>
+
+    <!-- ga -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-46852172-3', 'cn.vuejs.org');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body class="docs">
+    <div id="mobile-bar">
+      <a class="menu-button"></a>
+      <a class="logo" href="/"></a>
+    </div>
+    <div id="header">
+  <a id="logo" href="/">
+    <span>QuickApp TS</span>
+  </a>
+  <ul id="nav">
+    <li class="nav-dropdown-container learn">
+  <a class="nav-link">目录</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li>
+      <ul>
+        <li>
+          <a href="/guide/" class="nav-link
+            ">文档
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li>
+  </ul>
+</div>
+
+    
+      <div id="main" class="fix-sidebar">
+        
+          
+  <div class="sidebar">
+  <div class="sidebar-inner">
+    <ul class="main-menu">
+      <li class="nav-dropdown-container learn">
+  <a class="nav-link">目录</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li>
+      <ul>
+        <li>
+          <a href="/guide/" class="nav-link
+            ">文档
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</li>
+    </ul>
+    <div class="list">
+      
+      
+        <h2>
+          
+          文档
+          
+        </h2>
+        <ul class="menu-root">
+  
+    
+    
+    <li>
+      <a href="/guide/index.html" class="sidebar-link">简介</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/guide/installation.html" class="sidebar-link">安装</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/guide/features.html" class="sidebar-link current">功能</a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="/guide/samples.html" class="sidebar-link">示例</a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+</div>
+
+<!--
+<div id="sidebar-sponsors-platinum-right">
+  <div class="main-sponsor">
+    <span>白金赞助商</span>
+    <div>
+    <a href="https://moduscreate.com/?utm_source=Vue&utm_medium=Partnership&utm_campaign=VueShip" target="_blank" class="logo">
+      <img src="/images/modus.png" alt="Modus">
+    </a>
+    <a href="https://www.bitsrc.io/?utm_source=vue&utm_medium=vue&utm_campaign=vue&utm_term=vue&utm_content=vue" target="_blank" class="logo">
+      <img src="/images/bit.png" alt="Bit">
+    </a>
+    <a href="http://tooltwist.com/" target="_blank" class="logo">
+      <img src="/images/tooltwist.png" alt="Tooltwist">
+    </a>
+    <a href="https://vueschool.io/?utm_source=Vuejs.org&utm_medium=Banner&utm_campaign=Sponsored%20Banner&utm_content=V1" target="_blank" class="logo">
+      <img src="/images/vueschool.png" alt="VueSchool">
+    </a>
+    <a href="https://vehikl.com/" target="_blank" class="logo">
+      <img src="/images/vehikl.png" alt="Vehikl">
+    </a>
+    <a href="https://www.nativescript.org/vue?utm_source=vue-js-org&utm_medium=website&utm_campaign=nativescript-awareness" target="_blank" class="logo">
+      <img src="/images/nativescript.png" alt="NativeScript">
+    </a>
+    </div>
+  </div>
+  <a class="become-backer" href="/support-vuejs">
+    成为赞助者
+  </a>
+</div>
+
+-->
+
+
+<div class="content guide with-sidebar features-guide">
+  
+    
+      
+    
+  
+  
+    <h1>功能</h1>
+  
+
+  
+
+  
+    <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>这一部分主要是展示新的写法对开发的帮助。感觉就是类型提示和检查的帮助最大了。。跳转和查看定义也一并包含在里面了。。所以暂时只写了这个。。</p>
+<h2 id="类型提示与检查"><a href="#类型提示与检查" class="headerlink" title="类型提示与检查"></a>类型提示与检查</h2><h3 id="原生组件"><a href="#原生组件" class="headerlink" title="原生组件"></a>原生组件</h3><p>类型提示主要是要安装quick-types，这个包的话，就是一堆.d.ts文件，里面是自己定义的JSX标签和属性。因为其实JSX并不是和React绑定的，它是可以自定义的，这个就比较好。。请见：<a href="https://www.typescriptlang.org/docs/handbook/jsx.html" target="_blank" rel="noopener">https://www.typescriptlang.org/docs/handbook/jsx.html</a></p>
+<p><img src="/images/features/type-inference.gif" alt="原生组件的类型提示"></p>
+<h3 id="自定义组件"><a href="#自定义组件" class="headerlink" title="自定义组件"></a>自定义组件</h3><p>采取class的语法。。就是因为类型提示或者检查的话，jsx要求组件是类或者函数才行。。有没有其它办法，我还不太清楚。换成类的语法，也许在组件复用上也会有其它做法，不过我也不太熟悉。。还有就是用object的话，方法里面this的推断成any，有办法倒是，就是要多写点别的类型提示，用class就不用多写什么了。所以最后采取了class的语法。</p>
+<p>类型检查主要是把能在编译时发现的错误在运行之前就解决，感觉这种比较好。。</p>
+<p><img src="/images/features/component-type-check.gif" alt="组件的类型检查"></p>
+<p>然后其它就不举例了，因为都是写ts和jsx，所以和其它这样写的都一样，该有的提示都会有，比如绑定事件时候传的函数那些也都会有提示的。</p>
+
+  
+  
+    <div class="guide-links">
+      
+      
+        <span>← <a href="/guide/installation.html">安装</a></span>
+      
+      
+      
+        <span style="float: right;"><a href="/guide/samples.html">示例</a> →</span>
+      
+    </div>
+  
+  
+</div>
+
+        
+      </div>
+      <script src="/js/smooth-scroll.min.js"></script>
+    
+
+    <!-- main custom script for sidebars, version selects etc. -->
+    <script src="/js/css.escape.js"></script>
+    <script src="/js/common.js"></script>
+
+    <!-- search -->
+    <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/search.css">
+    <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+    <script>
+    [
+      '#search-query-nav',
+      '#search-query-sidebar',
+      '#search-query-menu'
+    ].forEach(function (selector) {
+      if (!document.querySelector(selector)) return
+      // search index defaults to v2
+      var match = window.location.pathname.match(/^\/(v\d+)/)
+      var version = match ? match[1] : 'v2'
+      docsearch({
+      appId: 'BH4D9OD16A',
+      apiKey: '5638280abff9d207417bb03be05f0b25',
+      indexName: 'vuejs_cn2',
+      inputSelector: selector,
+      algoliaOptions: { facetFilters: ["version:" + version] },
+      autocompleteOptions: { hint: false, appendTo: 'body'}
+      })
+    })
+    </script>
+
+    <!-- fastclick -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      FastClick.attach(document.body)
+    }, false)
+    </script>
+  </body>
+</html>
