@@ -209,10 +209,10 @@
   
     <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>这一部分主要是展示新的写法对开发的帮助。感觉就是类型提示和检查的帮助最大了。。跳转和查看定义也一并包含在里面了。。所以暂时只写了这个。。</p>
 <h2 id="类型提示与检查"><a href="#类型提示与检查" class="headerlink" title="类型提示与检查"></a>类型提示与检查</h2><h3 id="原生组件"><a href="#原生组件" class="headerlink" title="原生组件"></a>原生组件</h3><p>类型提示主要是要安装quick-types，这个包的话，就是一堆.d.ts文件，里面是自己定义的JSX标签和属性。因为其实JSX并不是和React绑定的，它是可以自定义的，这个就比较好。。请见：<a href="https://www.typescriptlang.org/docs/handbook/jsx.html" target="_blank" rel="noopener">https://www.typescriptlang.org/docs/handbook/jsx.html</a></p>
-<p><img src="/images/features/type-inference.gif" alt="原生组件的类型提示"></p>
+<p><img src="/quick-ts/images/features/type-inference.gif" alt="原生组件的类型提示"></p>
 <h3 id="自定义组件"><a href="#自定义组件" class="headerlink" title="自定义组件"></a>自定义组件</h3><p>采取class的语法。。就是因为类型提示或者检查的话，jsx要求组件是类或者函数才行。。有没有其它办法，我还不太清楚。换成类的语法，也许在组件复用上也会有其它做法，不过我也不太熟悉。。还有就是用object的话，方法里面this的推断成any，有办法倒是，就是要多写点别的类型提示，用class就不用多写什么了。所以最后采取了class的语法。</p>
 <p>类型检查主要是把能在编译时发现的错误在运行之前就解决，感觉这种比较好。。</p>
-<p><img src="/images/features/component-type-check.gif" alt="组件的类型检查"><br></p>
+<p><img src="/quick-ts/images/features/component-type-check.gif" alt="组件的类型检查"></p>
 <p>然后其它就不举例了，因为都是写ts和jsx，所以和其它这样写的都一样，该有的提示都会有，比如绑定事件时候传的函数那些也都会有提示的。</p>
 
   

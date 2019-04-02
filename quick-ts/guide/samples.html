@@ -250,7 +250,7 @@
 <p>会变成：<br><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">import</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../node_modules/todo-item/todo-item.ux"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"todo-item"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">import</span>&gt;</span></code></pre></p>
 <p>有多少个<code>../</code>就看引用<code>TodoItem</code>的文件在哪儿了。。这里只是一个例子。</p>
 <h2 id="成员访问"><a href="#成员访问" class="headerlink" title="成员访问"></a>成员访问</h2><p>成员访问的话，快应用里面，定义在private或者props里面的字段，访问用的是this，这样其实不好类型提示和检查的。所以新的写法里面，采取更直观的做法，就是，定义成什么样，就怎么样访问，比如：</p>
-<p><img src="/images/samples/member-access.gif" alt="成员访问"></p>
+<p><img src="/quick-ts/images/samples/member-access.gif" alt="成员访问"></p>
 <p>这个图片显示得太小不太好看，可以右键然后在新标签页里面打开图片，就能看得很清晰。</p>
 <h2 id="事件绑定"><a href="#事件绑定" class="headerlink" title="事件绑定"></a>事件绑定</h2><p>事件绑定其实写法和成员访问差不多，比如：</p>
 <pre><code class="hljs js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> <span class="hljs-title">implements</span> <span class="hljs-title">QuickApp</span>.<span class="hljs-title">IPageComponent</span>
