@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>简介 · QuickApp TS</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;quickapp-ts-是什么&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#quickapp-ts-是什么&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;QuickApp TS 是什么&lt;/h2&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="简介 · QuickApp TS"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ianpas.github.io//quick-ts/"/><meta property="og:description" content="&lt;h2&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;quickapp-ts-是什么&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#quickapp-ts-是什么&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;QuickApp TS 是什么&lt;/h2&gt;
+"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/quick-ts/img/logo.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/vs2015.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/quick-ts/css/main.css"/><script src="/quick-ts/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/quick-ts/"><h2 class="headerTitle">QuickApp TS</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/quick-ts/docs/intro" target="_self">文档</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>文档</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">文档</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/quick-ts/docs/intro">简介</a></li><li class="navListItem"><a class="navItem" href="/quick-ts/docs/installation">安装</a></li><li class="navListItem"><a class="navItem" href="/quick-ts/docs/features">功能</a></li><li class="navListItem"><a class="navItem" href="/quick-ts/docs/samples">示例</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">简介</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="quickapp-ts-是什么"></a><a href="#quickapp-ts-是什么" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>QuickApp TS 是什么</h2>
+<p>就是用ts来开发快应用的尝试，现在有两个npm包。<a href="https://www.npmjs.com/package/quick-module">quick-module</a>和<a href="https://www.npmjs.com/package/quick-types">quick-types</a>。</p>
+<ul>
+<li>quick-module: 一个翻译器，把tsx文件翻译成ux和js文件</li>
+<li>quick-types: 一系列.d.ts文件，里面包含写快应用程序时会用到的类型定义</li>
+</ul>
+<p>预期还会有一个做单元测试的包。因为加了一步翻译，所以组件实例就能完全自己控制了，这样做单元测试可能会比较方便。</p>
+<h2><a class="anchor" aria-hidden="true" id="预览"></a><a href="#预览" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>预览</h2>
+<p>以前是写ux文件，然后现在是写tsx文件，一个组件大概就变成这样的写法：</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> <span class="hljs-string">"./main.css"</span>;
+ 
+<span class="hljs-keyword">import</span> TodoItem <span class="hljs-keyword">from</span> <span class="hljs-string">"./todo-item/todo-item"</span>;
+ 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> <span class="hljs-title">implements</span> <span class="hljs-title">QuickApp</span>.<span class="hljs-title">IComponent</span>
+</span>{
+    props = {
+      <span class="hljs-attr">foo</span>: <span class="hljs-number">1</span>
+    }
+ 
+    template()
+    {
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"main-page"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-text"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">{this.handleInput}</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">input</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">TodoItem</span> <span class="hljs-attr">fooParam</span>=<span class="hljs-string">{this.props.foo}</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">TodoItem</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        );
+    }
+ 
+    handleInput(e: QuickApp.ClickEvent)
+    {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">arguments</span>);
+    }
+}
+ 
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Main;
+</code></pre>
+<p>然后使用quick-module翻译之后，就生成两个文件:*.ux和*.js</p>
+<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">import</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./todo-item/todo-item.ux"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"todo-item"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">import</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"main-page"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-text"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"{{handleInput}}"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">input</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">todo-item</span> <span class="hljs-attr">foo-param</span>=<span class="hljs-string">"{{foo}}"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">todo-item</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> { <span class="hljs-keyword">default</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">"./main.js"</span>;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./main.css"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<pre><code class="hljs css language-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{
+  <span class="hljs-keyword">constructor</span>() {
+    <span class="hljs-keyword">this</span>.props = {
+      <span class="hljs-attr">foo</span>: {
+        <span class="hljs-attr">default</span>: <span class="hljs-number">1</span>
+      }
+    };
+  }
+
+  handleInput(e) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">arguments</span>);
+  }
+
+}
+
+<span class="hljs-keyword">const</span> __INSTANCE__ = <span class="hljs-keyword">new</span> Main();
+
+<span class="hljs-keyword">const</span> props = <span class="hljs-built_in">Object</span>.getOwnPropertyNames(Main.prototype);
+props.forEach(<span class="hljs-function"><span class="hljs-params">prop</span> =&gt;</span> {
+  <span class="hljs-keyword">if</span> (prop !== <span class="hljs-string">"constructor"</span>) {
+    __INSTANCE__[prop] = __INSTANCE__.__proto__[prop];
+  }
+});
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> __INSTANCE__;
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/quick-ts/docs/installation"><span>安装</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#quickapp-ts-是什么">QuickApp TS 是什么</a></li><li><a href="#预览">预览</a></li></ul></nav></div><div></div></div></body></html>
