@@ -1,13 +1,13 @@
 {
   "main.css": "/auto-format/static/css/main.bdbd0eb0.chunk.css",
-  "main.js": "/auto-format/static/js/main.59f81d07.chunk.js",
-  "main.js.map": "/auto-format/static/js/main.59f81d07.chunk.js.map",
+  "main.js": "/auto-format/static/js/main.dba798d6.chunk.js",
+  "main.js.map": "/auto-format/static/js/main.dba798d6.chunk.js.map",
   "static/js/1.14df3c2a.chunk.js": "/auto-format/static/js/1.14df3c2a.chunk.js",
   "static/js/1.14df3c2a.chunk.js.map": "/auto-format/static/js/1.14df3c2a.chunk.js.map",
   "runtime~main.js": "/auto-format/static/js/runtime~main.f2def207.js",
   "runtime~main.js.map": "/auto-format/static/js/runtime~main.f2def207.js.map",
   "static/css/main.bdbd0eb0.chunk.css.map": "/auto-format/static/css/main.bdbd0eb0.chunk.css.map",
   "index.html": "/auto-format/index.html",
-  "precache-manifest.3e7d9593746cbc19a533ed83a680d417.js": "/auto-format/precache-manifest.3e7d9593746cbc19a533ed83a680d417.js",
+  "precache-manifest.d5014c480fca4bdb3f939539f6154bd9.js": "/auto-format/precache-manifest.d5014c480fca4bdb3f939539f6154bd9.js",
   "service-worker.js": "/auto-format/service-worker.js"
 }
