@@ -1,13 +1,13 @@
 {
-  "main.css": "/auto-format/static/css/main.bdbd0eb0.chunk.css",
-  "main.js": "/auto-format/static/js/main.3cf04bee.chunk.js",
-  "main.js.map": "/auto-format/static/js/main.3cf04bee.chunk.js.map",
-  "static/js/1.14df3c2a.chunk.js": "/auto-format/static/js/1.14df3c2a.chunk.js",
-  "static/js/1.14df3c2a.chunk.js.map": "/auto-format/static/js/1.14df3c2a.chunk.js.map",
+  "main.css": "/auto-format/static/css/main.ee493f11.chunk.css",
+  "main.js": "/auto-format/static/js/main.8c764724.chunk.js",
+  "main.js.map": "/auto-format/static/js/main.8c764724.chunk.js.map",
+  "static/js/1.8ac27dcf.chunk.js": "/auto-format/static/js/1.8ac27dcf.chunk.js",
+  "static/js/1.8ac27dcf.chunk.js.map": "/auto-format/static/js/1.8ac27dcf.chunk.js.map",
   "runtime~main.js": "/auto-format/static/js/runtime~main.f2def207.js",
   "runtime~main.js.map": "/auto-format/static/js/runtime~main.f2def207.js.map",
-  "static/css/main.bdbd0eb0.chunk.css.map": "/auto-format/static/css/main.bdbd0eb0.chunk.css.map",
+  "static/css/main.ee493f11.chunk.css.map": "/auto-format/static/css/main.ee493f11.chunk.css.map",
   "index.html": "/auto-format/index.html",
-  "precache-manifest.b98c24ba882dda824d5eb27a718706a8.js": "/auto-format/precache-manifest.b98c24ba882dda824d5eb27a718706a8.js",
+  "precache-manifest.f2149444c01a1588b13ad91761664cd3.js": "/auto-format/precache-manifest.f2149444c01a1588b13ad91761664cd3.js",
   "service-worker.js": "/auto-format/service-worker.js"
 }
